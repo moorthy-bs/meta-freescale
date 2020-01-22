@@ -21,7 +21,7 @@ SRC_URI_append = " file://0001-libteec-refactor-_dprintf.patch \
 S = "${WORKDIR}/git"
 SYSTEMD_SERVICE_${PN} = "tee-supplicant.service"
 
-EXTRA_OEMAKE = "CFG_SECURE_DATA_PATH=y"
+EXTRA_OEMAKE = "CFG_SECURE_DATA_PATH=n"
 
 do_compile () {
     if [ ${DEFAULTTUNE} = "aarch64" ]; then

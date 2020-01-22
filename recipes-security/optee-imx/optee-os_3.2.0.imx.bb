@@ -41,7 +41,7 @@ EXTRA_OEMAKE = "PLATFORM=imx PLATFORM_FLAVOR=${PLATFORM_FLAVOR} \
                 NOWERROR=1 \
                 LDFLAGS= \
                 O=${B} \
-                CFG_SECURE_DATA_PATH=y \
+                CFG_SECURE_DATA_PATH=n \
                 CFG_TEE_SDP_MEM_BASE=0xCC000000 \
                 CFG_TEE_SDP_MEM_SIZE=0x02000000 \
                 CFG_TEE_SDP_NONCACHE=y \
